@@ -4,8 +4,6 @@ Software Engineering student at Lviv Polytechnic National University and aspirin
 
 ### 🛠 Tech Stack
 
-### 🛠 Tech Stack
-
 **Languages & Frameworks:** ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009485?style=for-the-badge&logo=fastapi&logoColor=white)
 
