@@ -31,4 +31,4 @@ I am continuously improving my skills in software engineering, system design, an
 
 ### 📫 Connect with Me
 
-* LinkedIn: [Bohdan Turevych](www.linkedin.com/in/bohdan-turevych)
+* LinkedIn: [Bohdan Turevych](https://www.linkedin.com/in/bohdan-turevych)
