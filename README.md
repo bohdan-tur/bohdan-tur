@@ -1,94 +1,84 @@
-<h1 align="center">Hi there, I'm Bohdan 👋</h1>
+<h1 align="center">Bohdan Turevych</h1>
 
 <p align="center">
-  <b>Software Engineering Student</b> at Lviv Polytechnic National University <br>
-  <b>Aspiring Python Backend Developer</b>
+  <strong>Python Backend Developer · FastAPI · Django</strong>
 </p>
 
 <p align="center">
-I enjoy building scalable backend applications using modern Python technologies,
-writing clean and maintainable code, and continuously improving my engineering skills.
+  Software Engineering student at Lviv Polytechnic National University.<br>
+  I build tested backend systems with asynchronous APIs, transactional business
+  logic, background processing, and practical observability.
 </p>
-
----
-
-## 🛠 Tech Stack
-
-### Languages & Frameworks
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009485?style=for-the-badge&logo=fastapi&logoColor=white)
-
-### Databases & ORM
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=python&logoColor=white)
-
-### Infrastructure & DevOps
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-### Testing
-![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-
----
-
-## 📊 GitHub Statistics
-
-
 
 <p align="center">
-  <img height="170" src="https://streak-stats.demolab.com?user=bohdan-tur&theme=tokyonight&hide_border=true"/>
+  <a href="https://www.linkedin.com/in/bohdan-turevych"><img src="https://img.shields.io/badge/LinkedIn-Bohdan%20Turevych-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:turevicbogdan4@gmail.com"><img src="https://img.shields.io/badge/Email-turevicbogdan4%40gmail.com-EA4335?logo=gmail&logoColor=white" alt="Email"></a>
+  <img src="https://img.shields.io/badge/Open%20to-Remote%20Junior%20Backend%20Roles-2EA44F" alt="Open to remote junior backend roles">
 </p>
 
----
+## Selected projects
 
-## 🚀 Featured Projects
+### [Price Tracker](https://github.com/bohdan-tur/price-tracker) — FastAPI, scraping, Telegram
 
-### 💰 Price Tracker
+An asynchronous price-monitoring backend that tracks products, stores price
+history, and sends target-price alerts through Telegram.
 
-Asynchronous price-tracking API built with FastAPI, PostgreSQL, Redis, and Celery. Scrapes product prices from e-commerce sites, keeps full price history, and refreshes prices daily via a Celery beat scheduler.
+- Celery and Redis handle scheduled checks, isolated retries, and notification delivery.
+- The scraper defends against SSRF through allowlists, DNS checks, redirect validation, and response-size limits.
+- Prometheus, Grafana, and Flower expose HTTP and Celery behavior.
+- A controlled local run processed **1,162 requests in 30 seconds** with **0 failures** and **95 ms HTTP p95 latency**.
 
-**Highlights:** JWT auth (access + refresh) · SSRF-protected scraper · Multi-strategy price extraction (JSON-LD, meta tags, CSS selectors) · Argon2 password hashing · Async SQLAlchemy · Alembic migrations · Admin panel · Dockerized dev environment
+### [BudgetFlow API](https://github.com/bohdan-tur/budgetflow-api) — Django REST Framework
 
-🔗 **Repository:** [bohdan-tur/price-tracker](https://github.com/bohdan-tur/price-tracker)
+A personal-finance API for wallets, transactions, transfers, budgets, and
+currency-aware reports.
 
-### 🏨 Booking App
+- Financial operations use Decimal, atomic transactions, and row-level locks.
+- User-scoped querysets prevent cross-account access to financial data.
+- Same-currency transfers and balance changes enforce explicit business rules.
+- **135 tests** cover authentication, balances, insufficient funds, isolation, budgets, and reports; CI enforces **85%+ coverage**.
 
-A production-style asynchronous hotel booking backend built with **FastAPI**.
+### [Booking API](https://github.com/bohdan-tur/booking-app) — FastAPI, concurrency
 
-**Highlights:** JWT Authentication · Refresh Tokens · Role-Based Access Control · Async SQLAlchemy · Celery Background Tasks · Docker Compose · GitHub Actions CI · Alembic Migrations · Comprehensive Testing
+A capacity-aware hotel-booking backend with secure authentication and scheduled
+background workflows.
 
-🔗 **Repository:** [bohdan-tur/booking-app](https://github.com/bohdan-tur/booking-app)
+- PostgreSQL SELECT ... FOR UPDATE protects inventory under concurrent booking attempts.
+- Rotating refresh tokens are stored as hashes and guarded against concurrent reuse.
+- Role-based access separates user, manager, and administrator operations.
+- **139 tests** cover security, booking lifecycle, Celery behavior, and real PostgreSQL race conditions.
 
----
+## Core stack
 
-## 🌱 Currently Learning
+| Area | Technologies |
+|---|---|
+| Backend | Python, FastAPI, Django, Django REST Framework, Pydantic |
+| Data | PostgreSQL, SQLAlchemy, Django ORM, Alembic, Redis |
+| Async and integrations | Celery, Celery Beat, HTTPX, Beautiful Soup, aiogram |
+| Security | JWT, Argon2, RBAC, rate limiting, SSRF defenses |
+| Testing | Pytest, pytest-asyncio, pytest-django, HTTPX, Factory Boy, coverage.py |
+| Infrastructure | Docker, Docker Compose, GitHub Actions |
+| Observability | Prometheus, Grafana, Flower |
 
-- Advanced FastAPI
-- Async Python
-- Clean Architecture
-- Backend Performance Optimization
+## Engineering focus
 
----
+- Transactional consistency and concurrency control.
+- Secure authentication and authorization boundaries.
+- Background jobs with bounded retries and idempotent processing.
+- Reproducible environments, migrations, automated tests, and CI.
+- Clear API contracts and operational visibility.
 
-## 🎯 Goals
+## Education and achievements
 
-- Build production-quality backend services
-- Deepen knowledge of distributed systems
-- Contribute to open-source projects
-- Start my career as a Python Backend Engineer
+- **BSc in Software Engineering**, Lviv Polytechnic National University — expected 2029.
+- **Presidential Scholarship, 2025** — awarded for NMT results of 185+.
+- **BEST::HACKath0n 2026 participant** — team backend development; certificate of participation.
 
----
+## Contact
 
-## 📫 Connect with Me
+I am open to **remote Junior Python Backend Developer** opportunities involving
+FastAPI, Django, REST APIs, PostgreSQL, automation, scraping, or Telegram
+integrations.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bohdan-turevych)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:turevicbogdan4@gmail.com)
-
----
-
-<p align="center">
-⭐ Thanks for visiting my profile!
-</p>
+- LinkedIn: [linkedin.com/in/bohdan-turevych](https://www.linkedin.com/in/bohdan-turevych)
+- Email: [turevicbogdan4@gmail.com](mailto:turevicbogdan4@gmail.com)
