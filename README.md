@@ -82,11 +82,8 @@ Django REST Framework API for wallets, transactions, transfers, budgets, and fin
 ## GitHub statistics
 
 <p align="center">
-  <img width="650" src="https://github-stats-extended.vercel.app/api?username=bohdan-tur&show_icons=true&include_all_commits=true&rank_icon=github&theme=github_dark&hide_border=true&custom_title=GitHub%20Stats" alt="GitHub statistics">
-</p>
-
-<p align="center">
-  <img width="450" src="https://github-stats-extended.vercel.app/api/top-langs?username=bohdan-tur&layout=compact&langs_count=6&theme=github_dark&hide_border=true&custom_title=Most%20Used%20Languages" alt="Most used languages">
+  <img width="420" src="https://github-stats-extended.vercel.app/api?username=bohdan-tur&show_icons=true&include_all_commits=true&rank_icon=github&theme=github_dark&hide_border=true&custom_title=GitHub%20Stats" alt="GitHub statistics">
+  <img width="320" src="https://github-stats-extended.vercel.app/api/top-langs?username=bohdan-tur&layout=compact&langs_count=6&theme=github_dark&hide_border=true&custom_title=Most%20Used%20Languages" alt="Most used languages">
 </p>
 
 ## Engineering focus
@@ -102,9 +99,3 @@ Django REST Framework API for wallets, transactions, transfers, budgets, and fin
 **BSc in Software Engineering**  
 Lviv Polytechnic National University · Expected graduation: 2029
 
-## Contact
-
-I am open to internship, trainee, and junior Python backend opportunities.
-
-- [LinkedIn](https://www.linkedin.com/in/bohdan-turevych)
-- [Email](mailto:turevicbogdan4@gmail.com)
