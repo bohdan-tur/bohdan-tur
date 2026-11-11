@@ -1,7 +1,7 @@
 <h1 align="center">Bohdan Turevych</h1>
 
 <p align="center">
-  <strong>Python Developer · Testing &amp; Quality</strong><br>
+  <strong>Software Engineer · Testing &amp; Quality</strong><br>
   Pytest · FastAPI · Django REST Framework · PostgreSQL · GitHub Actions · Docker
 </p>
 
