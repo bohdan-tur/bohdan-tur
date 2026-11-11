@@ -1,8 +1,8 @@
 <h1 align="center">Bohdan Turevych</h1>
 
 <p align="center">
-  <strong>Python Backend Developer</strong><br>
-  FastAPI · Django REST Framework · PostgreSQL · Redis · Celery · Docker
+  <strong>Python Developer · Testing &amp; Quality</strong><br>
+  Pytest · FastAPI · Django REST Framework · PostgreSQL · GitHub Actions · Docker
 </p>
 
 <p align="center">
@@ -26,9 +26,9 @@
 
 ## About me
 
-I am a Python backend developer and Software Engineering student at Lviv Polytechnic National University. I build reliable REST APIs, background-processing systems, and database-driven applications with FastAPI and Django REST Framework.
+I am a Software Engineering student at Lviv Polytechnic National University. I build REST APIs and database-driven applications in Python, and the part I care about most is how they are tested.
 
-My projects focus on transactional consistency, secure authentication, asynchronous jobs, automated testing, CI, and practical observability.
+In my projects I write Pytest suites, concurrency tests for race conditions, and CI quality gates that catch problems before merge.
 
 ## Featured projects
 
@@ -39,6 +39,7 @@ My projects focus on transactional consistency, secure authentication, asynchron
 
 FastAPI service that tracks product prices, preserves history, and sends Telegram alerts.
 
+- Automated tests with **78% total coverage**, run in CI on every change.
 - Async SQLAlchemy, PostgreSQL, Celery, Redis, and Alembic.
 - Defensive scraping with SSRF protection, redirect validation, and response-size limits.
 - Prometheus, Grafana, and Flower observability.
@@ -51,10 +52,10 @@ FastAPI service that tracks product prices, preserves history, and sends Telegra
 
 FastAPI hotel-booking backend designed to protect reservations and sessions from race conditions.
 
-- PostgreSQL row locking and transactional consistency.
-- JWT access and rotating refresh-token sessions, Argon2, RBAC, and rate limiting.
-- Celery/Redis notifications and scheduled jobs.
 - **139 automated tests** with **78% total coverage**.
+- Concurrency tests that send simultaneous booking requests to verify double booking is prevented.
+- CI pipeline: linting, dependency audit, migration checks, tests, and build.
+- PostgreSQL row locking, JWT sessions with refresh-token rotation, RBAC, and rate limiting.
 
 ### [BudgetFlow API](https://github.com/bohdan-tur/budgetflow-api) — multi-currency personal finance
 
@@ -63,19 +64,19 @@ FastAPI hotel-booking backend designed to protect reservations and sessions from
 
 Django REST Framework API for wallets, transactions, transfers, budgets, and financial reports.
 
+- **135 automated tests** with **92% total coverage**.
 - Decimal arithmetic and strict separation of currency totals.
 - Atomic balance updates and PostgreSQL row-level locking.
 - JWT authentication and user-level data isolation.
-- **135 automated tests** with **92% total coverage**.
 
 ## Core stack
 
 | Area | Technologies |
 |---|---|
+| Testing and quality | Pytest, Postman, Ruff, pip-audit, GitHub Actions, Cypress (learning) |
 | Backend | Python, FastAPI, Django REST Framework, Pydantic |
 | Data | PostgreSQL, SQLAlchemy, Django ORM, Alembic, Redis |
 | Background jobs | Celery, Celery Beat |
-| Testing and quality | Pytest, Ruff, pip-audit, GitHub Actions |
 | Infrastructure | Docker, Docker Compose |
 | Observability | Prometheus, Grafana, Flower |
 
@@ -88,11 +89,11 @@ Django REST Framework API for wallets, transactions, transfers, budgets, and fin
 
 ## Engineering focus
 
+- Test strategy: unit, integration, and API tests, including race conditions.
+- CI quality gates that run on every change.
 - Transactional consistency and concurrency control.
 - Secure authentication and authorization boundaries.
-- Background jobs with bounded retries and idempotent processing.
 - Defensive integrations with external services.
-- Automated testing, CI, and maintainable documentation.
 
 ## Education
 
